@@ -1,25 +1,28 @@
-# Ember-ted-gear
+# TED gear
 
-This README outlines the details of collaborating on this Ember addon.
+A gear + dropdown menu component that is commonly used on TED's web
+applications.
+
+![TED-gear](https://cv-screenshots.s3.amazonaws.com/TalkstarFrontend_2015-09-11_15-23-28)
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-ted-gear
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```hbs
+<ted-gear>
+  <ted-gear-option>
+     An option here
+  </ted-gear-option>
 
-## Running Tests
+  <ted-gear-divider />
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+  <ted-gear-option>
+     An option here
+  </ted-gear-option>
+</ted-gear>
+```
