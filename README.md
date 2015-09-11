@@ -5,24 +5,30 @@ applications.
 
 ![TED-gear](https://cv-screenshots.s3.amazonaws.com/TalkstarFrontend_2015-09-11_15-23-28)
 
+
 ## Installation
 
 ```
 ember install ember-ted-gear
 ```
 
+### Dependencies
+
+This addon uses styles from Bootstrap and font awesome. It's best to use
+this in combination with TED Bootstrap.
+
 ## Usage
 
 ```hbs
 <ted-gear>
-  <ted-gear-option>
+  <ted-gear-item>
      An option here
-  </ted-gear-option>
+  </ted-gear-item>
 
   <ted-gear-divider />
 
-  <ted-gear-option>
+  <ted-gear-item>
      An option here
-  </ted-gear-option>
+  </ted-gear-item>
 </ted-gear>
 ```

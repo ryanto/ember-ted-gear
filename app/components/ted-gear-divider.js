@@ -1,0 +1,1 @@
+export { default } from 'ember-ted-gear/components/ted-gear-divider';
