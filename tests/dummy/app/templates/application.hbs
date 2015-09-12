@@ -1,3 +1,96 @@
-<h2 id="title">Welcome to Ember</h2>
+{{ted-page-header
+  subheading='Ember'
+  slim-heading='Option'
+  strong-heading='Gear'
+  byline='A simple gear + option drop down'}}
 
-{{outlet}}
+<div class="container">
+  <h2>Install</h2>
+
+  <pre>ember install ember-ted-gear</pre>
+
+  <hr />
+
+
+  <h2>Usage</h2>
+
+  <h4>Simple gear</h4>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      {{code-snippet name='simple-example.hbs'}}
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      A simple gear:
+
+{{!-- BEGIN-SNIPPET simple-example --}}
+{{#ted-gear}}
+  {{#ted-gear-item}}
+    <a href="http://www.ted.com">TED.com</a>
+  {{/ted-gear-item}}
+{{/ted-gear}}
+{{!-- END-SNIPPET --}}
+
+    </div>
+  </div>
+
+  <hr />
+
+  <h4>Alignment</h4>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      {{code-snippet name='align-example.hbs'}}
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      Right aligned:
+
+      <div style="width: 20px; display: inline-block;">
+{{!-- BEGIN-SNIPPET align-example --}}
+{{#ted-gear align="right"}}
+  {{#ted-gear-item}}
+    <a href="http://www.ted.com">TED.com</a>
+  {{/ted-gear-item}}
+{{/ted-gear}}
+{{!-- END-SNIPPET --}}
+      </div>
+
+
+    </div>
+  </div>
+
+  <hr />
+
+  <h4>Headers and dividers</h4>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      {{code-snippet name='headers-and-dividers.hbs'}}
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      With headers and dividers:
+
+{{!-- BEGIN-SNIPPET headers-and-dividers --}}
+{{#ted-gear}}
+  {{#ted-gear-header}}
+    Header
+  {{/ted-gear-header}}
+  {{#ted-gear-item}}
+    <a href="http://www.ted.com">TED.com</a>
+  {{/ted-gear-item}}
+
+  {{ted-gear-divider}}
+
+  {{#ted-gear-header}}
+    Header #2
+  {{/ted-gear-header}}
+  {{#ted-gear-item}}
+    <a href="http://www.ted.com">TED.com</a>
+  {{/ted-gear-item}}
+{{/ted-gear}}
+{{!-- END-SNIPPET --}}
+
+    </div>
+  </div>
+</div>
+

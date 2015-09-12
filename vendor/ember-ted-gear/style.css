@@ -1,0 +1,9 @@
+.Ted-gear {
+  display: inline-block;
+ }
+
+.Ted-gear > .dropdown > .dropdown-toggle > i.fa {
+  color: #999;
+  font-size: 17px;
+}
+

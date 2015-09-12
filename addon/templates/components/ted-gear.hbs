@@ -2,7 +2,7 @@
   <div class="dropdown-toggle" data-toggle="dropdown" type="button">
     <i class="fa fa-gear Ted-gear__toggle"></i>
   </div>
-  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+  <ul class="dropdown-menu {{if right 'dropdown-menu-right'}}" role="menu">
     {{yield}}
   </ul>
 </div>
